@@ -69,30 +69,13 @@ def find_xy(dataframe, key: str, name: str):
             WebDriverWait(driver, 3).until(input_site).click()
             WebDriverWait(driver, 3).until(input_site).send_keys(juso)
             WebDriverWait(driver, 3).until(input_site).send_keys(Keys.RETURN)
-            sleep(1)
+            sleep(0.5)
             coord = WebDriverWait(driver, 3).until(coord_site).text.split(",")
             get_coord.append([name, coord[1][4:], coord[0][3:]])
         except:
             get_coord.append([name, '', ''])
 
     return pd.DataFrame(get_coord, columns=['name', 'lat', 'lon'])
-
-
-def get_api():
-    url = 'http://apis.data.go.kr/B552061/frequentzoneFreezing/getRestFrequentzoneFreezing'
-    params = {'serviceKey': '****',  # API decoded key
-              'searchYearCd': '2017',
-              'siDo': '11',  # 서울특별시
-              'guGun': '380',  # 은평구
-              'type': 'json',
-              'numOfRows': '5',
-              'pageNo': '1'}
-
-    response = requests.get(url, params=params)
-    data = json.loads(response.content)
-
-    return pd.DataFrame(data['items']['item'])
-
 
 def trans_wtm2wgs84(dataframe):
     proj_wtm = Proj(init='epsg:5186')

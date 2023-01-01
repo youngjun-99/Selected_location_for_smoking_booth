@@ -6,7 +6,7 @@ from folium.plugins import MarkerCluster
 j_map = json.load(
     open('./data/org/skorea_municipalities_geo_simple.json', encoding='utf-8'))
 
-people = pd.read_csv('./data/seoul_people.csv', encoding='utf-8')
+people = pd.read_csv('./data/seoul_people.csv')
 
 # 서울 위경도
 lat_c, lon_c = 37.53165351203043, 126.9974246490573
@@ -19,9 +19,7 @@ m.choropleth(geo_data=j_map,
              fill_color='PuRd',
              key_on='feature.id')
 
-jaeseorham = pd.read_csv('./data/conv_seoul_smoke_point.csv',
-                  encoding='cp949',
-                  sep=",",)
+jaeseorham = pd.read_csv('./data/smoke_point.csv')
 
 marker_cluster = MarkerCluster().add_to(m)
 
