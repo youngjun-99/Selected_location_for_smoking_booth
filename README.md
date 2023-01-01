@@ -31,3 +31,6 @@ Gurobi Solver를 활용하여 Simple MIP(Mixed Integer Linear Programming)를 �
 - [서울시 강동구 유흥주점영업 인허가 정보](http://data.seoul.go.kr/dataList/OA-18576/S/1/datasetView.do)
 - [서울시 강동구 일반음식점 인허가 정보](https://data.seoul.go.kr/dataList/OA-18676/S/1/datasetView.do)
 - [서울시 강동구 학원 교습소정보](https://data.seoul.go.kr/dataList/OA-20554/S/1/datasetView.do)
+
+### Problem
+- seoul_smoke_point > 강동구 데이터 존재하지 않음
