@@ -1,7 +1,7 @@
 # Selected_location_for_smoking_booth
 산업시스템공학과 캡스톤디자인 - 강동구 흡연부스 입지선정 프로젝트
 
-## Data update with refactoring date : 2022-12-31 ~
+## Data update with refactoring date : 2022-12-31 ~ 2023-01-01
 
 ## MCLP
 
