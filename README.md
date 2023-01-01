@@ -1,7 +1,7 @@
 # Selected_location_for_smoking_booth
 산업시스템공학과 캡스톤디자인 - 강동구 흡연부스 입지선정 프로젝트
 
-## Data update with refactoring date : 2022-12-31 ~
+## Data update with refactoring date : 2022-12-31 ~ 2023-01-01
 
 ## MCLP
 
@@ -31,3 +31,6 @@ Gurobi Solver를 활용하여 Simple MIP(Mixed Integer Linear Programming)를 �
 - [서울시 강동구 유흥주점영업 인허가 정보](http://data.seoul.go.kr/dataList/OA-18576/S/1/datasetView.do)
 - [서울시 강동구 일반음식점 인허가 정보](https://data.seoul.go.kr/dataList/OA-18676/S/1/datasetView.do)
 - [서울시 강동구 학원 교습소정보](https://data.seoul.go.kr/dataList/OA-20554/S/1/datasetView.do)
+
+### Problem
+- seoul_smoke_point > 강동구 데이터 존재하지 않음
