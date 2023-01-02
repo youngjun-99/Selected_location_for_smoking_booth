@@ -43,7 +43,7 @@ restaurant[restaurant['lat'] != 'x좌표없음'].to_csv("./data/smoke_point.csv"
 academy = pd.read_csv(
     './data/org/서울시 강동구 학원 교습소정보.csv', encoding='cp949')
 academy = find_xy(academy, '도로명주소', '학원명')
-restaurant[restaurant['lat'] != 'x좌표없음'].to_csv("./data/academy.csv", index=False)
+academy[academy['lat'] != 'x좌표없음'].to_csv("./data/academy.csv", index=False)
 
 # 금연구역 필요한 정보만 (none_smoke_area)
 none_smoke_area = pd.read_csv(
